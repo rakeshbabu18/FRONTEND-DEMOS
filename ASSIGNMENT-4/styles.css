@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+/* HEAD SECTION */
+.head{
+    height: 100vh;
+    background: url("/PHOTOS/hiking.png") center center / cover no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.head-overlay{
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+}
+
+.head h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.head button{
+    padding: 12px 30px;
+    border: none;
+    background: orange;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* OUTDOOR SECTION */
+.outdoor{
+    display: flex;
+    padding: 80px 10%;
+    gap: 50px;
+    align-items: center;
+    background: white;
+}
+
+.outdoor-text{
+    flex: 1;
+}
+
+.outdoor-text h2{
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.outdoor-img{
+    flex: 1;
+}
+
+.outdoor-img img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* TOURISM SECTION */
+.tourism{
+    padding: 80px 10%;
+    background: #f9f9f9;
+}
+
+.section-title{
+    color: #003366;
+    margin-bottom: 40px;
+}
+
+.tourism-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card{
+    background: #e6e6e6;
+    padding: 40px 20px;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card img{
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin: 20px auto 0;
+}
+
+
+/* CHOOSE SECTION */
+.choose{
+    padding: 80px 10%;
+    text-align: center;
+    background: white;
+}
+
+.choose h2{
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.tabs{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+ 
+.tabs .active{
+    border-bottom: 3px solid orange;
+    color: orange;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+
+    .head h1{
+        font-size: 24px;
+    }
+
+    .outdoor{
+        flex-direction: column;
+    }
+
+    .tabs{
+        flex-direction: column;
+        gap: 15px;
+    }
+}

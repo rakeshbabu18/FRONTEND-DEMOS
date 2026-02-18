@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* NAVBAR */
+header{
+    background: #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+
+.logo{
+    font-weight: bold;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #00b3b3;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* HERO */
+.hero{
+    background: #2ec4b6;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero img{
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.hero h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* CONTENT */
+.content{
+    display: flex;
+    padding: 50px 5%;
+    gap: 40px;
+}
+
+.column{
+    flex: 1;
+}
+
+.column h2{
+    margin-bottom: 20px;
+}
+
+.column p{
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* FOOD BOX */
+.food-box{
+    background: #2ec4b6;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.food-box img{
+    width: 60px;
+    margin: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+
+    .content{
+        flex-direction: column;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
